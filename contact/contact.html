@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>- Tapis Rouges -</title>
+</head>
+<body>
+
+    <!---------------------  section 1 ----------------------->
+
+    <header>
+        <a href="#" class="logo"><img src="../image/logo.png" alt="logo"></a>
+        <ul class="navigation">
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../restaurant/restaurant.html">RESTAURANT</a></li>
+            <li><a href="../brasserie/brasserie.html">BRASSERIE</a></li>
+            <li><a href="../team/equipe.html">L’ÉQUIPE</a></li>
+            <li><a href="../boutique/store.html">ACHETER EN LIGNE</a></li>
+            <li><a href="../galery/GALERIE.html" >GALERIE</a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
+    </header>
+
+
+    <!---------------------  section 2 ----------------------->
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, doloribus. Eos quis rem voluptates laborum iste, ad dicta eveniet deserunt doloribus aut maiores quas rerum et! Reiciendis earum sunt non nemo! Distinctio vitae ducimus ab nobis, praesentium ut aperiam at.
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Adress</h3>
+                        <p>15 RUE HUBERT CURIEN <br>
+                            Z.A. ROMANET<br>
+                            87000 LIMOGES</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>05 55 08 63 06</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p> TAPISROUGELIMOGES@GMAIL.COM </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" name="" placeholder="Full Name" required="required">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" placeholder="Email" required="required">
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" placeholder="Type your Message...."></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  <!--------------------- footer ----------------------->
+
+     <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>LES GROUPES</h4>
+                    <ul class="first">
+                        <li><a href="#">DES TARIFS DE GROUPE SONT APPLIQUÉS AU DELÀ DE 30 PERSONNES. CE, ASSOCIATIONS, CLUBS...<br>
+                            N'HÉSITEZ PAS À DEMANDER DAVANTAGE DE RENSEIGNEMENTS.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NEWSLETTER</h4>
+                    <ul>
+                        <li><a href="#">
+                            JE SOUHAITE RECEVOIR LES NEWS
+                            DE TAPIS ROUGE </a>
+                        </li>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RÉSEAUX SOCIAUX</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+
+
+
+     <!--           script         -->
+
+
+     <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        })
+      </script>
+</body>
+</html>

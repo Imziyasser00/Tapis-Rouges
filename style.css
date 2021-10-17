@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #990113;
+}
+
+::selection {
+  color: white;
+  background: #990113;
+}
+
+/* ----------  section 1  ------------*/
+
+p {
+  font-weight: 300;
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgb(0, 0, 0, 0.2),
+      rgb(0, 0, 0, 1)
+    ),
+    url("image/bg.jpg");
+  background-size: cover;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 7em;
+  font-family: "secular one";
+}
+
+.banner .content h2 .tapis {
+  color: #d5bb85;
+  font-family: "Alfa Slab One";
+  text-shadow: 4px 4px 42px black;
+}
+
+.banner .content h2 .rouges {
+  color: #d60019;
+  font-family: "Alfa Slab One";
+  text-shadow: 5px 5px 18px black;
+}
+
+.banner .content p {
+  font-size: 1.1em;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5%;
+}
+
+header.sticky {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.8s;
+}
+
+header .logo img {
+  height: auto;
+  width: 70%;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+  padding-top: 0px;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+header .navigation li a.active {
+  color: #d60019;
+  font-weight: bold;
+  border-bottom: 2px solid #d60019;
+}
+
+header .navigation li a:hover {
+  color: #d60019;
+}
+
+.btn {
+  background: #d60019;
+  font-size: 1em;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 50px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ---------- section 2 ------------*/
+
+.content-2 {
+  background: rgb(0, 0, 0, 1);
+  min-height: 90vh;
+  position: relative;
+}
+
+.content-2 h2 {
+  color: #d60019;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 100px;
+  font-family: "Poppins";
+}
+
+.content-2 .img {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.content-2 img {
+  height: 500px;
+  padding: 30px;
+  border: 6px solid #d60019;
+}
+
+.content-2 .btn-2 {
+  color: #d60019;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 25px;
+  font-family: "Poppins";
+}
+
+.content-2 .btn-2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background: #d60019;
+  padding: 10px 50px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.content-2 .btn-2 a:hover {
+  letter-spacing: 6px;
+}
+
+/* ----------    section 3    ------------*/
+
+.content-3 {
+  position: relative;
+  display: flex;
+  min-height: 40vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.content-3 .banner-1 {
+  text-align: center;
+  color: aliceblue;
+  width: 50%;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 40px;
+  background: rgba(214, 0, 25, 0.3);
+  border: 5px solid rgba(214, 0, 25, 0.4);
+  border-radius: 5px;
+}
+
+.content-3 .banner-1 .text h2 {
+  font-family: "Roboto Mono";
+  font-weight: 400;
+}
+
+/*------------------ section 4 --------------*/
+
+.content-4 {
+  background: rgb(0, 0, 0, 1);
+  min-height: 130vh;
+  position: relative;
+}
+
+.content-4 .img {
+  text-align: center;
+}
+
+.content-4 .img .img1 {
+  margin-bottom: 70px;
+}
+
+/*------------------ section 5 --------------*/
+
+.content-5 {
+  position: relative;
+  display: flex;
+  min-height: 80vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.content-5 .banner-1 {
+  text-align: center;
+  color: aliceblue;
+  width: 50%;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 40px;
+  background: rgba(214, 0, 25, 0.3);
+  border: 5px solid rgba(214, 0, 25, 0.4);
+  border-radius: 5px;
+}
+
+.content-5 .banner-1 .text h2 {
+  font-weight: 300;
+}
+
+.content-5 .banner-1 .text h2 span {
+  font-weight: 600;
+}
+
+/* --------------------- footer --------------------------*/
+
+footer {
+  border-top: 7px solid rgba(214, 0, 25, 0.8);
+}
+
+.container-footer {
+  max-width: 1170px;
+
+  margin: auto;
+}
+.row {
+  display: flex;
+}
+.footer .container-footer .row .footer-col ul {
+  list-style: none;
+}
+.footer {
+  background-color: #000;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  margin-left: 70px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgba(214, 0, 25, 0.8);
+  height: 3px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #fff;
+  background-color: rgba(214, 0, 25, 0.8);
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.form-control {
+  width: 100%;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.89);
+  color: rgba(156, 5, 23, 0.8);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.form-control:hover {
+  border: 1.5px solid rgba(214, 0, 25, 0.8);
+}

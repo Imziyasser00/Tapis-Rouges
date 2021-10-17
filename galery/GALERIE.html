@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="galerie.css">
+    <title>- Tapis Rouges -</title>
+</head>
+<body>
+
+    <!---------------------  section 1 ----------------------->
+
+    <header>
+        <a href="#" class="logo"><img src="../image/logo.png" alt="logo"></a>
+        <ul class="navigation">
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../restaurant/restaurant.html">RESTAURANT</a></li>
+            <li><a href="../brasserie/brasserie.html">BRASSERIE</a></li>
+            <li><a href="../team/equipe.html">L’ÉQUIPE</a></li>
+            <li><a href="../boutique/store.html">ACHETER EN LIGNE</a></li>
+            <li><a href="GALERIE.html" class="active">GALERIE</a></li>
+            <li><a href="../contact/contact.html">CONTACT</a></li>
+    </header>
+
+    <!---------------------  section 2 ----------------------->
+
+
+      <section class="banner" id="banner">
+        <div class="content">
+            <h1>GALERIE</h1>
+        </div>
+    </section>
+
+    <!---------------------  section 2 ----------------------->
+
+    <style>
+        img{max-width: 100%}
+	
+	
+	
+    .slideshow{
+    border:5px solid #ff0000;
+    box-shadow:0 0 5px hsla(0,0%,0%,.5);
+    overflow:hidden;
+    width:1000px;
+    margin:14rem auto;
+    position:relative}
+        
+    .slideshow ul{
+    
+    padding: 66.67% 0 0 0;
+    margin:0;
+    position:relative
+        
+        }
+        
+        
+    .slideshow li{
+    
+    top:0;
+    left:0;
+    animation:slideshow 25s ease infinite;
+    position:absolute;
+    opacity:0;
+    list-style-type:none}
+    
+        
+    
+    .slideshow li:nth-child(2){animation-delay:5s}
+    .slideshow li:nth-child(3){animation-delay:10s}
+    .slideshow li:nth-child(4){animation-delay:15s}
+    .slideshow li:nth-child(5){animation-delay:20s}
+        
+    @keyframes slideshow{
+        
+    0%{opacity:0}
+    10%{opacity:1}
+    20%{opacity:1}
+    25%{opacity:0}
+    100%{opacity:0}
+        
+        } 
+    
+        
+
+    
+    
+    /*****barre progression *****/
+    .barre_progression{ 
+        
+    position:absolute;
+    bottom:0px;
+    height:8px;
+    background:#ff0000;
+    animation:barre_progression 25s ease-out infinite;
+        
+    }
+        
+    /*****animation barre progression *****/    
+    @keyframes barre_progression{
+        
+    0%,20%,40%,60%,80%,100%{width:0%;opacity:0}
+        
+    4%,24%,44%,64%,84%{width:0%;opacity:.3}
+        
+    16%,36%,56%,76%,96%{width:100%;opacity:.7}
+        
+    17%,37%,57%,77%,97%{width:100%;opacity:.3}
+        
+    18%,38%,58%,78%,98%{width:100%;opacity:0}
+        
+        }
+        
+    </style>
+
+
+<div class="slideshow">
+    <ul>
+    <li><img src="https://www.guyom-design.com/blog/images/1.jpg" alt></li>
+    <li><img src="https://www.guyom-design.com/blog/images/2.jpg" alt></li>
+    <li><img src="https://www.guyom-design.com/blog/images/3.jpg" alt></li>
+    <li><img src="https://www.guyom-design.com/blog/images/4.jpg" alt></li>
+    <li><img src="https://www.guyom-design.com/blog/images/5.jpg" alt></li>
+    </ul>
+    <div class="barre_progression"></div>
+    </div>
+  <!--------------------- footer ----------------------->
+
+     <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>LES GROUPES</h4>
+                    <ul class="first">
+                        <li><a href="#">DES TARIFS DE GROUPE SONT APPLIQUÉS AU DELÀ DE 30 PERSONNES. CE, ASSOCIATIONS, CLUBS...<br>
+                            N'HÉSITEZ PAS À DEMANDER DAVANTAGE DE RENSEIGNEMENTS.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NEWSLETTER</h4>
+                    <ul>
+                        <li><a href="#">
+                            JE SOUHAITE RECEVOIR LES NEWS
+                            DE TAPIS ROUGE </a>
+                        </li>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RÉSEAUX SOCIAUX</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+
+
+
+     <!--           script         -->
+
+
+     <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        })
+      </script>
+</body>
+</html>

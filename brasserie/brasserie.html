@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="brasseri.css">
+    <title>- Tapis Rouges -</title>
+</head>
+<body>
+
+    <!---------------------  section 1 ----------------------->
+
+    <header>
+        <a href="#" class="logo"><img src="../image/logo.png" alt="logo"></a>
+        <ul class="navigation">
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="../restaurant/restaurant.html" >RESTAURANT</a></li>
+            <li><a href="brasserie.html" class="active">BRASSERIE</a></li>
+            <li><a href="../team/equipe.html">L’ÉQUIPE</a></li>
+            <li><a href="../boutique/store.html">ACHETER EN LIGNE</a></li>
+            <li><a href="../galery/GALERIE.html">GALERIE</a></li>
+            <li><a href="../contact/contact.html">CONTACT</a></li>
+    </header>
+
+    <!---------------------  section 2 ----------------------->
+
+
+      <section class="banner" id="banner">
+        <div class="content">
+            <h1>LA PETITE LOGE HIVER COMME ÉTÉ</h1>
+        </div>
+    </section>
+
+    <!---------------------  section 2 ----------------------->
+
+    <section class="text-bra">
+        <div class="textb">
+            <h3>La Petite Loge est la brasserie du midi du cabaret Le Tapis Rouge. Entièrement couverte et aérée, la terrasse de 150m2 est également ouverte de juin à aout en soirée les jeudis, vendredis et samedis avec un BBQ live music chaque soir.<br>
+                Profitez d'un cadre exceptionnel pour vos pauses-déjeuners en dégustant un menu gourmand et unique, renouvelé chaque jour par notre Cheffe.<br>
+                3 entrées, 3 plats, 3 desserts au choix !<br>
+                Entrée + Plat, ou Plat + Dessert 17€<br>
+                Entrée + Plat + Dessert 22€<br>
+                Plat unique 14€<br>
+                A la carte Viande de Boeuf Limousin et Grillades diverses<br><br>
+                
+                Mieux vaut toujours donner un coup de téléphone pour être sur d'avoir de la place.<br>
+                Possibilité de privatiser la terrasse pour vos évènements en soirée, cocktail, réunion, pause, BBQ partie privée.</h3>
+        </div>
+        <div class="img">
+            <img src="../image/bar.jpg" alt="bar">
+        </div>
+    </section>
+
+
+
+
+
+  <!--------------------- footer ----------------------->
+
+     <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>LES GROUPES</h4>
+                    <ul class="first">
+                        <li><a href="#">DES TARIFS DE GROUPE SONT APPLIQUÉS AU DELÀ DE 30 PERSONNES. CE, ASSOCIATIONS, CLUBS...<br>
+                            N'HÉSITEZ PAS À DEMANDER DAVANTAGE DE RENSEIGNEMENTS.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NEWSLETTER</h4>
+                    <ul>
+                        <li><a href="#">
+                            JE SOUHAITE RECEVOIR LES NEWS
+                            DE TAPIS ROUGE </a>
+                        </li>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RÉSEAUX SOCIAUX</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+
+
+
+     <!--           script         -->
+
+
+     <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        })
+      </script>
+</body>
+</html>
